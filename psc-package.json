@@ -1,0 +1,12 @@
+{
+  "name": "how-to-compose-free-monad",
+  "set": "psc-0.12.0",
+  "source": "https://github.com/purescript/package-sets.git",
+  "depends": [
+    "console",
+    "effect",
+    "free",
+    "functors",
+    "prelude"
+  ]
+}
