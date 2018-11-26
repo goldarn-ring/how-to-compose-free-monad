@@ -1,0 +1,47 @@
+name:                how-to-compose-free-monad
+version:             0.1.0.0
+github:              "goldarn-ring/how-to-compose-free-monad"
+license:             Unlicense
+author:              "goldarn-ring"
+maintainer:          "goldarnring+github@gmail.com"
+copyright:           "2018 goldarn-ring"
+
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/how-to-compose-free-monad#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- free >= 5.0 && < 6
+- transformers >= 0.4 && < 1
+
+library:
+  source-dirs: src
+
+executables:
+  how-to-compose-free-monad-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - how-to-compose-free-monad
+
+tests:
+  how-to-compose-free-monad-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - how-to-compose-free-monad
