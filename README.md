@@ -15,3 +15,7 @@ pulp run
 psc-package install
 pulp run
 ```
+
+## Haskell版
+
+https://github.com/goldarn-ring/how-to-compose-free-monad/tree/master/haskell/how-to-compose-free-monad
